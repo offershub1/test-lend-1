@@ -1,2 +1,2 @@
 <?php
-echo 'test 3 wr';
+echo 'test 3 wrc';
