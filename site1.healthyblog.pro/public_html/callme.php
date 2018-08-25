@@ -1,5 +1,5 @@
 <?php
-$mail = 'amideco@mail.ru';
+$mail = 'flextime24@mail.ru';
 
 if (!empty($_POST['name']) && !empty($_POST['number']))
 {
