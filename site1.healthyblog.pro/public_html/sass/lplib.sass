@@ -1,0 +1,53 @@
+﻿$RL : RobotoL
+$RB : RobotoB
+$RM : RobotoM
+$RR : RobotoR
+$G : Gotham
+$Gb : Gabriola
+$S : alsscript
+
+$width: 1170px
+
+body
+  overflow-x: hidden
+
+@each $name in $RL,$RB,$RM,$RR,$S
+  @font-face
+    font-family: #{$name}
+    src: url(../fonts/#{$name}.ttf)
+
+
+@font-face
+  font-family: Gotham
+  src: url(../fonts/Gotham.otf)
+
+@font-face
+  font-family: $Gb
+  src: url(../fonts/#{$Gb}.otf)
+
+$i: 10
+@while $i <= 100
+  .ptop-#{$i}
+    padding-top: 1px * $i
+  $i: $i + 10
+
+a
+  text-decoration: none
+
+.body_container
+  padding-top: 470px
+
+h1, h2, h3, h4
+  font-weight: normal
+
+@import "screen_header.sass"
+@import "screen1.sass"
+@import "screen2.sass"
+@import "screen3.sass"
+@import "screen4.sass"
+@import "screen5.sass"
+@import "screen6.sass"
+@import "screen7.sass"
+@import "screen8.sass"
+@import "screen9.sass"
+@import "screen_footer.sass"
