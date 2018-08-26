@@ -1,5 +1,5 @@
 <?php
 
 echo 'fssddf';
-echo '<ppre>';
+echo '<pre>';
 print_r($_SERVER)
